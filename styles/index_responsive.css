@@ -1,0 +1,131 @@
+:root{
+  --size:400px;
+}
+
+@media only screen and (max-width: 480px) {
+  
+  body{
+    background-color: red;
+    height: 100%;
+    max-width: var(--size);
+    padding: 0 24px;
+  }
+
+ 
+  
+  nav button.btnMenu img{
+    height: 34px;
+  }
+
+
+  header nav{
+    max-width: var(--size);
+    margin:0 auto;
+    padding: auto 50px;
+  }
+
+  nav ul{
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    list-style: none;
+    gap:20px;
+
+  }
+
+  nav ul li{
+    color:var(--text);
+    font-weight: 700;
+  }
+
+  nav input{
+    display:none;
+  }
+
+  header nav button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  header nav button.btnTheme{
+    display:none;
+
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:30px;
+    color:white;
+    margin-right: 60px;
+  }
+
+  section div.profile{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+  }
+
+  section div.profile img{
+    width: 120px;
+  }
+
+  section div.profile h3{
+    font-size: 16px;
+    color:white;
+  }
+
+
+  section div.social{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  section div.social a{
+    width: 20px;
+  }
+
+  .body{
+    display: flex;
+    max-width: var(--size);
+  }
+  .body span.line{
+    display:none;
+  }
+
+  .body .left{
+    display:none;
+  }
+
+  div> .right{
+    margin:80px auto;
+    max-width: var(--size);
+  }
+
+  .body .list_projects{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .body .list_projects img{
+    width: 250px;
+  }
+
+
+}
+
+
+@media only screen and (min-width: 480px) {
+  nav .btnMenu{
+  display: none;
+  }
+
+}
